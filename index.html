@@ -12,6 +12,37 @@
       </div>
     </div>
 
+  <!------------->
+  <!--Templates-->
+  <!------------->
+  <script type="text/template" id="user-list-template">
+    <h1>User List</h1>
+    <hr />
+
+    <table class="table striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% _.each(users, function(user) { %>
+          <tr>
+            <td><%= user.get('name') %></td>
+            <td><%= user.get('username') %></td>
+            <td><%= user.get('email') %></td>
+            <td></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </script>
+
   <script src="./bundle.js"></script>
+
   </body>
 </html>

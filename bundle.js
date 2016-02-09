@@ -53,13 +53,11 @@ module.exports = Backbone.View.extend({
 
     users.fetch({
       success: function(users) {
-//        var template = _.template($('user-list-template').html());
+        var template = _.template($('#user-list-template').html());
+        self.$el.html(template({ users: users.models }));
         console.log('users stuff passed down: ', users.models);
       }
     });
-
-
-    this.$el.html("Is this working properly");
   }
 });
 },{"../collections/users.js":2,"backbone":5,"jquery":6,"underscore":7}],5:[function(require,module,exports){
