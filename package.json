@@ -1,0 +1,27 @@
+{
+  "name": "bb-sample",
+  "version": "0.0.1",
+  "description": "Sample app written using backbone.js frontend",
+  "main": "app.js",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "jquery": "^2.2.0",
+    "gulp": "^3.9.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify app.js -o bundle.js --debug --list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troyeubanks/backbone-sample.git"
+  },
+  "author": "Troy Eubanks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/troyeubanks/backbone-sample/issues"
+  },
+  "homepage": "https://github.com/troyeubanks/backbone-sample#readme"
+}

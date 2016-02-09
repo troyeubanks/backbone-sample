@@ -16,12 +16,9 @@ module.exports = Backbone.View.extend({
 
     users.fetch({
       success: function(users) {
-//        var template = _.template($('user-list-template').html());
-        console.log('users stuff passed down: ', users.models);
+        var template = _.template($('#user-list-template').html());
+        self.$el.html(template({ users: users.models }));
       }
     });
-
-
-    this.$el.html("Is this working properly");
   }
 });
