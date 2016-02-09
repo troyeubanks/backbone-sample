@@ -1,8 +1,9 @@
 'use strict';
 
 var Backbone = require('backbone');
-var $ = require('jquery');
+window.jQuery = $ = require('jquery');
 Backbone.$ = $;
+var bootstrap = require('bootstrap/dist/js/bootstrap');
 
 $.ajaxPrefilter( function( options, originalOptions, jqXHR ) {
   options.url = 'http://jsonplaceholder.typicode.com' + options.url;
